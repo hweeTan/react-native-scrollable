@@ -1,9 +1,10 @@
 {
-  "name": "reactNativeScrollable",
+  "name": "react-native-scrollable",
   "version": "0.0.1",
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
+    "build:android": "react-native bundle --dev false --platform android --entry-file index.js --bundle-output ./android/app/build/intermediates/assets/release/index.android.bundle --assets-dest ./android/app/build/intermediates/res/merged/release",
     "test": "jest"
   },
   "dependencies": {
